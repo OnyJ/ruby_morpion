@@ -54,7 +54,7 @@ Board
   clear_board_cells
 
 BoardCell < Board
-  attr_accessor :name, :value (check syntax)
+  attr_accessor :name, :value
   initialize
     -> @name = ?? how to name from Board.new
   display
