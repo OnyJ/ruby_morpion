@@ -1,4 +1,4 @@
-class Board
+module Board
   # @@board_cells
   def new
     # sure we access children class like this ?
