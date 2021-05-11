@@ -1,9 +1,20 @@
-$:.unshift File.expand_path("./../lib/app", __FILE__)
-require 'game'
+require 'player'
+require 'board_entity'
+include Player
 
-class Game
+module Game
+  include BoardEntity
+  # attr_accessor :player1, :player2
+
   def new
+    puts "game new"
     # set player1, player2 = Player.new
+
+    puts "new players"
+    @player1 = Player.create
+    # @player2 = Player.new
+
+    @player1.display_name
     # set board = Board.new
   end
 
