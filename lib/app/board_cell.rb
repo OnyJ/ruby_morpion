@@ -1,4 +1,4 @@
-class BoardCell < Board
+module BoardCell
   # attr_accessor :name, :cell_symbol
 
   def new(cell_name)
