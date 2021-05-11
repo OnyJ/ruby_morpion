@@ -8,3 +8,6 @@ require 'game'
 require 'board'
 require 'board_cell'
 require 'player'
+include Game
+
+Game.new
